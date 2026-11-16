@@ -1,0 +1,19 @@
+{
+  "name": "kolto-bot-kit",
+  "private": true,
+  "description": "Shared Discord libraries for Kolto Labs bots.",
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.workspace.json",
+    "check": "tsc -b tsconfig.workspace.json --pretty false",
+    "test": "node --test packages/*/dist/*.test.js",
+    "clean": "tsc -b tsconfig.workspace.json --clean"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.3",
+    "typescript": "~6.0.2"
+  }
+}

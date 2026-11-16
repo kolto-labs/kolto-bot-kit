@@ -1,0 +1,32 @@
+{
+  "name": "@kolto-labs/bot-core",
+  "version": "0.1.0",
+  "description": "Discord client factory, logger and command deployment for Kolto Labs bots.",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kolto-labs/kolto-bot-kit.git",
+    "directory": "packages/core"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.2"
+  }
+}
